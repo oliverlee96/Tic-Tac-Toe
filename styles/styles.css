@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    font-family: "Noto Sans Vai", sans-serif;
+    color: maroon;
+    background-color:antiquewhite;
+}
+
+#main-header {
+    background-color: lightpink;
+    padding: 2rem 5%;
+    text-align: center;
+}
+
+.btn {
+    font: inherit;
+    padding: 0.5rem 1.5rem;
+    background-color:lightpink;
+    border: 1px solid lightpink;
+    color: antiquewhite;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-alt {
+    background-color: transparent;
+    border-color: transparent;
+    color: lightpink;
+}
+
+.btn:hover {
+    background-color: palevioletred;
+    border-color: palevioletred;
+}
+
+.btn-alt:hover {
+    background-color: lavenderblush;
+}
