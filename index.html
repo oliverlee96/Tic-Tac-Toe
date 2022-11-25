@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="styles/styles.css">
         <link rel="stylesheet" href="styles/overlays.css">
         <link rel="stylesheet" href="styles/configuration.css">
+        <link rel="stylesheet" href="styles/game.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Noto+Sans+Vai&display=swap" rel="stylesheet">
@@ -41,7 +42,7 @@
                         <article>
                             <h2>Player 1</h2>
                             <h3>PLAYER NAME</h3>
-                            <p>X</p>
+                            <p class="player-symbol">X</p>
                             <button class="btn btn-alt">Edit</button>
                         </article>
                     </li>
@@ -49,7 +50,7 @@
                         <article>
                             <h2>Player 2</h2>
                             <h3>PLAYER NAME</h3>
-                            <p>O</p>
+                            <p class="player-symbol">O</p>
                             <button class="btn btn-alt">Edit</button>
                         </article>
                     </li>
@@ -58,8 +59,8 @@
 
             </section>
             <section id="active-game">
-                <article>
-                    <h3>You won <span>WINNER NAME</span>!</h3>
+                <article id="game-over">
+                    <h2><span id="active-player-name">WINNER NAME</span> wins!</h2>
                     <p>Click "Start New Game" above, to start a new game!</p>
                 </article>
 
