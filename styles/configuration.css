@@ -7,6 +7,15 @@
     margin: 0.5rem 0;
 }
 
+.error {
+    color: red;
+}
+.error input {
+    border-color: red;
+    color: red;
+    background-color: pink
+}
+
 .form-control {
     margin: 0.5rem 0;
 }

@@ -4,6 +4,8 @@
 const configOverlay = document.getElementById('config-overlay');
 const backdropElement = document.getElementById('backdrop');
 const form = document.querySelector('form');
+const configErrorText = document.getElementById('config-errors');
+
 
 //button elements
 const editPlayerOneButtonElement = document.getElementById('edit-player-one-button');
