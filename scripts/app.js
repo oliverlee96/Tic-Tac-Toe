@@ -1,5 +1,19 @@
 //responsible for initialising the app and storing intital variables
 
+let editedPlayer = 0;
+
+const players = [
+    {
+        name: '',
+        symbol: 'X'
+    },
+    {
+        name: '',
+        symbol: 'O'
+    },
+];
+
+
 //overlay and backdrop elements
 const configOverlay = document.getElementById('config-overlay');
 const backdropElement = document.getElementById('backdrop');
