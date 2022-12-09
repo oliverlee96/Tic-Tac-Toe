@@ -1,5 +1,11 @@
 //responsible for initialising the app and storing intital variables
 
+const gameData = [ //2d array, i.e arrays within an array
+    [0,0,0],
+    [0,0,0],
+    [0,0,0],
+];
+
 let editedPlayer = 0;
 let activePlayer = 0; // changes from 0 to 1 after each turn, so you can access this index in the array
 
