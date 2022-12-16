@@ -45,5 +45,59 @@ function selectGameField(event) {
     gameData[selectedRow][selectedColumn] = activePlayer +1; 
     console.log(gameData);
 
+    const winner = checkForGameOver();
+    console.log(winner);
+
+    currentRound++ //adds one to currentRound value
     switchPlayer();
 };
+
+function checkForGameOver() {
+
+    //checking rows for equality
+    for (let i = 0; i < 3; i++) {
+        if (
+            gameData[i][0] > 0 &&
+            gameData[i][0] === gameData[i][1] &&
+            gameData[i][1] === gameData[i][2]
+        ) {
+        return gameData[i][0];
+        }
+    };
+
+    //checking columns for equality
+    for (let i = 0; i < 3; i++) {
+        if (
+            gameData[0][i] > 0 &&
+            gameData[0][i] === gameData[1][i] &&
+            gameData[1][i] === gameData[2][i]
+        ) {
+        return gameData[0][i];
+        }
+    };
+
+    //checking diagonal: top left to bottom right
+    if (
+        gameData[0][0] > 0 &&
+        gameData[0][0] === gameData[1][1] &&
+        gameData[1][1] === gameData[2][2]
+        ) {
+        return gameData[0][0];
+        }
+
+    //checking diagonal: top right to bottom left
+    if (
+        gameData[0][2] > 0 &&
+        gameData[0][2] === gameData[1][1] &&
+        gameData[1][1] === gameData[2][0]
+        ) {
+        return gameData[0][2];
+        }
+
+    if (currentRound === 9) {
+        return -1;
+    }
+
+    return 0;
+};
+

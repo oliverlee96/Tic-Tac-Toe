@@ -8,6 +8,7 @@ const gameData = [ //2d array, i.e arrays within an array
 
 let editedPlayer = 0;
 let activePlayer = 0; // changes from 0 to 1 after each turn, so you can access this index in the array
+let currentRound = 1;
 
 const players = [
     {
@@ -53,8 +54,3 @@ startNewGameButton.addEventListener('click', startNewGame);
 for (const gameBoardElement of gameBoardElements) {
     gameBoardElement.addEventListener('click', selectGameField);
 };
-
-
-
-
-
