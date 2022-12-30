@@ -9,6 +9,7 @@ const gameData = [ //2d array, i.e arrays within an array
 let editedPlayer = 0;
 let activePlayer = 0; // changes from 0 to 1 after each turn, so you can access this index in the array
 let currentRound = 1;
+let gameIsOver = false;
 
 const players = [
     {
@@ -26,6 +27,7 @@ const configOverlay = document.getElementById('config-overlay');
 const backdropElement = document.getElementById('backdrop');
 const form = document.querySelector('form');
 const configErrorText = document.getElementById('config-errors');
+const gameOver = document.getElementById('game-over');
 
 
 //button elements
